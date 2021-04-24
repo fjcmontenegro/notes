@@ -88,3 +88,9 @@ npm i -D prettier eslint-config-prettier eslint-plugin-prettier
   "trailingComma": "all"
 }
 ```
+
+## Add Sass and FontAwesome icons just for fun
+
+```
+npm i @fortawesome/fontawesome-svg-core @fortawesome/free-regular-svg-icons @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome sass
+```
