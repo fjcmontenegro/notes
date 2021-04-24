@@ -20,8 +20,8 @@ npx eslint --init
 Open `.eslinrc.json` and add to `"extends"`
 
 ```
-"prettier/@typescript-eslint",
-"plugin:prettier/recommended"
+"plugin:prettier/recommended",
+"prettier"
 ```
 
 Add to `"plugins"`
@@ -59,6 +59,13 @@ Replace `"rules"` and add `"settings"`:
     "version": "detect"
   }
 }
+```
+
+Add linting script to `package.json`
+
+```
+"lint": "eslint src/**/*.ts src/**/*.tsx",,
+"fix": "eslint src/**/*.ts src/**/*.tsx --fix"
 ```
 
 ## Prettier
