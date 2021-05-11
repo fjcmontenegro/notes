@@ -6,6 +6,8 @@ With Typescript template
 
 ```
 npx create-react-app PROJECT_NAME --template typescript
+--------------------------------------------------------
+yarn create react-app PROJECT_NAME --template typescript
 ```
 
 ## ESLint
@@ -15,6 +17,9 @@ Install and init:
 ```
 npm i -D eslint
 npx eslint --init
+-----------------
+yarn add -D eslint
+yarn eslint --init
 ```
 
 Open `.eslinrc.json` and add to `"extends"`
@@ -64,7 +69,7 @@ Replace `"rules"` and add `"settings"`:
 Add linting script to `package.json`
 
 ```
-"lint": "eslint src/**/*.ts src/**/*.tsx",,
+"lint": "eslint src/**/*.ts src/**/*.tsx",
 "fix": "eslint src/**/*.ts src/**/*.tsx --fix"
 ```
 
@@ -74,6 +79,8 @@ Install
 
 ```
 npm i -D prettier eslint-config-prettier eslint-plugin-prettier
+---------------------------------------------------------------
+yarn add -D prettier eslint-config-prettier eslint-plugin-prettier
 ```
 
 .Create a `prettierrc` and add these:
@@ -93,4 +100,6 @@ npm i -D prettier eslint-config-prettier eslint-plugin-prettier
 
 ```
 npm i @fortawesome/fontawesome-svg-core @fortawesome/free-regular-svg-icons @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome sass
+----------------------------------------------------------------------------------------------------------------------------------------------------
+yarn add @fortawesome/fontawesome-svg-core @fortawesome/free-regular-svg-icons @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome sass
 ```
