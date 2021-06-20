@@ -7,3 +7,4 @@ Random notes I take and don't know where to save.
 - [Creating a Context API React Hook](https://github.com/SplinterDev/notes/blob/main/context-notes.md)
 - [Typography](https://github.com/SplinterDev/notes/blob/main/typography/typography.md)
 - [TS React with ESLint and Prettier](https://github.com/SplinterDev/notes/blob/main/ts-react-eslint-prettier.md)
+- [React Debounce](https://github.com/SplinterDev/notes/blob/main/react-debounce.md)
