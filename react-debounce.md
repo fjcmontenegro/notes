@@ -1,21 +1,31 @@
 Outside the component: 
 
 ```tsx
-const debounce = (func: () => void, wait: number) => {
+export const debounce = (func: <T>(args?: T) => void, wait: number) => {
   let timeout: NodeJS.Timeout
 
-  return () => {
+  return <T>(args?: T) => {
     clearTimeout(timeout)
     timeout = setTimeout(() => {
       clearTimeout(timeout)
-      func()
+      func(args)
     }, wait)
   }
 }
 ```
 
-Inside the component:
+## With `useRef`
+
+Works nicely with functions that don't interact with state and don't receive parameters. `myFn` is evaluated only once at creation.
 
 ```tsx
 const debouncedFn = useRef(debounce(myFn, 1000)).current
+```
+
+## With `useMemo`
+
+Works nicely with functions that interact with states. Just list the correct dependencies.
+
+```tsx
+const debouncedFn = useMemo(() => debounce(myFn, 1000), [myFn])
 ```
