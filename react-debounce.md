@@ -26,6 +26,8 @@ const debouncedFn = useRef(debounce(myFn, 1000)).current
 
 Works nicely with functions that interact with states. Just list the correct dependencies.
 
+Using `useMemo` here instead of `useCallback` because we want React to run the function, generating the debounced one. `useCallback` would return a function that creates a debounced function. `useMemo` runs the function that creates a debonced function.
+
 ```tsx
 const debouncedFn = useMemo(() => debounce(myFn, 1000), [myFn])
 ```
