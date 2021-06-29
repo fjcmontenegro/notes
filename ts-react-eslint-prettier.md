@@ -6,7 +6,9 @@ With Typescript template
 
 ```
 npx create-react-app PROJECT_NAME --template typescript
---------------------------------------------------------
+```
+OR
+```
 yarn create react-app PROJECT_NAME --template typescript
 ```
 
@@ -17,7 +19,9 @@ Install and init:
 ```
 npm i -D eslint
 npx eslint --init
------------------
+```
+OR
+```
 yarn add -D eslint
 yarn eslint --init
 ```
@@ -79,7 +83,9 @@ Install
 
 ```
 npm i -D prettier eslint-config-prettier eslint-plugin-prettier
----------------------------------------------------------------
+```
+OR
+```
 yarn add -D prettier eslint-config-prettier eslint-plugin-prettier
 ```
 
@@ -100,6 +106,8 @@ yarn add -D prettier eslint-config-prettier eslint-plugin-prettier
 
 ```
 npm i @fortawesome/fontawesome-svg-core @fortawesome/free-regular-svg-icons @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome sass
-----------------------------------------------------------------------------------------------------------------------------------------------------
+```
+OR
+```
 yarn add @fortawesome/fontawesome-svg-core @fortawesome/free-regular-svg-icons @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome sass
 ```
