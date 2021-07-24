@@ -8,6 +8,8 @@
 
 - Go to `Build Settings` and under `Excluded Architectures` add `arm64` for both `Debug` and `Release`
 
+- Do this on both **MyApp and Pods**, otherwise it won't work
+
 ### 2. Exclude `arm64` from Podfile
 
 - Open `ios/Podfile` with a text editor and add this after `react_native_post_install(installer)`:
