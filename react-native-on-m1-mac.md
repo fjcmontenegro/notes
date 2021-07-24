@@ -1,6 +1,6 @@
 # Setting up a new React Native App
 
-`npx react-native init MyApp --template typescript`
+`npx react-native init MyApp --template react-native-template-typescript`
 
 ### 1. Exclude `arm64` from Xcode project
 
