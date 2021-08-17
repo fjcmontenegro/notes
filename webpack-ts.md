@@ -1,10 +1,14 @@
 ## 1. Create an empty repo
 
-```yarn init -y```
+```
+yarn init -y
+```
 
 ## 2. Install `webpack` and `TS` stuff
 
-```yarn add -D typescript ts-loader webpack webpack-cli webpack-dev-server @tsconfig/recommended```
+```
+yarn add -D typescript ts-loader webpack webpack-cli webpack-dev-server @tsconfig/recommended
+```
 
 ## 3. Create a `tsconfig.json` file
 
