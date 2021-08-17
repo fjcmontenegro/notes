@@ -7,7 +7,7 @@ yarn init -y
 ## 2. Install `webpack` and `TS` stuff
 
 ```
-yarn add -D typescript ts-loader webpack webpack-cli webpack-dev-server @tsconfig/recommended
+yarn add -D typescript ts-loader webpack webpack-cli webpack-dev-server html-webpack-plugin @tsconfig/recommended
 ```
 
 ## 3. Create a `tsconfig.json` file
@@ -36,6 +36,7 @@ yarn add -D typescript ts-loader webpack webpack-cli webpack-dev-server @tsconfi
 
 ```js
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: './src/index.ts',
@@ -57,6 +58,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
+  plugins: [new HtmlWebpackPlugin()],
 
   devServer: {
     contentBase: path.resolve(__dirname, 'dist'),
