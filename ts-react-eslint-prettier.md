@@ -176,7 +176,7 @@ Create a `.prettierrc` file at the root of your project and add the following li
 }
 ```
 
-That's it! If you run the project and get a ton of errors, that's a good thing! When the `create-react-app` command created that code, it wasn't aware of the ESLint rules of our style, so naturally it contains errors. Thanks to Prettier, just opening the files with errors and hitting save should fix most of the problems.
+That's it! If you run the project and get a ton of errors, that's a good thing! When the `create-react-app` command created that code, it wasn't aware of our ESLint rules, so naturally it contains errors. The problematic files are usually `src\App.tsx`, `src\index.tsx` and `src\reportWebVitals.ts`. Thanks to Prettier, simply opening the files and hitting save should fix most of the problems.
 
 ## BONUS: Add Sass and FontAwesome icons just for fun
 
