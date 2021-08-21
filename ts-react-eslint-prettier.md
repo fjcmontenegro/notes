@@ -1,5 +1,7 @@
 # Steps to configure a React project with Typescript, ESLint, and Prettier
 
+TL;DR: if you are myself and just want to grab the commands, head over to [the short version](https://github.com/SplinterDev/notes/blob/main/ts-react-eslint-prettier-short.md)
+
 ## Create a React App with the Typescript template
 
 ```
