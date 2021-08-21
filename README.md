@@ -8,3 +8,4 @@ Random notes I take and don't know where to save.
 - [Typography](https://github.com/SplinterDev/notes/blob/main/typography/typography.md)
 - [TS React with ESLint and Prettier](https://github.com/SplinterDev/notes/blob/main/ts-react-eslint-prettier.md)
 - [React Debounce](https://github.com/SplinterDev/notes/blob/main/react-debounce.md)
+- [Webpack TS](https://github.com/SplinterDev/notes/blob/main/webpack-ts.md)
