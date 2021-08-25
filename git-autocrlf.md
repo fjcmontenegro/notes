@@ -17,3 +17,5 @@ If you’re a Windows programmer doing a **Windows-only** project, then you can 
 ```
 git config --global core.autocrlf false
 ```
+
+([source](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration))
