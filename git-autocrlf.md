@@ -18,4 +18,6 @@ If you’re a Windows programmer doing a **Windows-only** project, then you can 
 git config --global core.autocrlf false
 ```
 
-([source](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration))
+([source](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration) and (source)[https://stackoverflow.com/questions/1967370/git-replacing-lf-with-crlf/20653073#20653073])
+
+PS: If you config VS Code to handle LF, just disable this thing
