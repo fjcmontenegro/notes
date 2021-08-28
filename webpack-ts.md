@@ -61,7 +61,7 @@ module.exports = {
   plugins: [new HtmlWebpackPlugin()],
 
   devServer: {
-    contentBase: path.resolve(__dirname, 'dist'),
+    static: "./",
     compress: true,
     port: 9000,
   },
