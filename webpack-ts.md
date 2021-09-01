@@ -4,7 +4,7 @@
 yarn init -y
 ```
 
-## 2. Install `webpack` and `TS` stuff
+## 2. Install `webpack` and `TS`
 
 ```
 yarn add -D typescript ts-loader webpack webpack-cli webpack-dev-server html-webpack-plugin @tsconfig/recommended
@@ -32,7 +32,7 @@ yarn add -D typescript ts-loader webpack webpack-cli webpack-dev-server html-web
 
 ```
 
-4. Create a `webpack.config.js` file
+## 4. Create a `webpack.config.js` file
 
 ```js
 const path = require('path')
@@ -68,7 +68,7 @@ module.exports = {
 }
 ```
 
-5. Add scripts to `package.json`
+## 5. Add scripts to `package.json`
 ```json
 "scripts": {
     "build": "webpack",
@@ -76,7 +76,7 @@ module.exports = {
   }
 ```
 
-6. Create `./dist/index.html`
+## 6. Create `./dist/index.html`
 
 ```html
 <!DOCTYPE html>
@@ -92,3 +92,49 @@ module.exports = {
 </html>
 ```
 
+## 7. (Optional) Prettier + ESLint
+
+```
+yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-prettier eslint-plugin-prettier prettier
+```
+
+`.eslintrc.json`:
+```json
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint", "prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "indent": ["error", 2],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single", { "avoidEscape": true }],
+    "semi": ["error", "never"]
+  }
+}
+```
+
+`.prettierrc`:
+```json
+{
+  "printWidth": 80,
+  "arrowParens": "always",
+  "semi": false,
+  "tabWidth": 2,
+  "singleQuote": true,
+  "trailingComma": "all"
+}
+```
