@@ -11,6 +11,10 @@
 
 - Create a solid grid system
 
+## canvas
+- Document it
+- Add README and make it public
+
 ## conways-game-of-life
 
 - Clean up code (get rid of unused css and review game code)
