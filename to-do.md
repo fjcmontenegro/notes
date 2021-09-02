@@ -9,8 +9,7 @@
 
 # To do
 
-- Create a solid gread system
-- Create TS canvas boilerplate
+- Create a solid grid system
 
 ## conways-game-of-life
 
@@ -22,5 +21,6 @@
 # Doing
 
 # Done
+- Create TS canvas boilerplate
 
 # Archive
