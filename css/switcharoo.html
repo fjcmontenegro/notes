@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS</title>
+
+  <style>
+    /* LAYOUT */
+    .container {
+      border: 1px solid royalblue;
+      width: 200px;
+    }
+
+    .content {
+      height: 200px;
+      width: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .content--1 {
+      background-color: aquamarine;
+    }
+
+    .content--2 {
+      background-color: burlywood;
+    }
+
+    /* STACK */
+
+    .stack {
+      display: grid;
+    }
+
+    .stack>* {
+      grid-area: 1 / -1;
+    }
+
+    /* SWITCHAROO */
+
+    .content {
+      transition: opacity .3s, margin-left 0.3s;
+      opacity: 0;
+      margin-left: -25px;
+    }
+
+    .content--active {
+      opacity: 1;
+      margin-left: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <script type="text/javascript" defer>
+    const select = (idx) => {
+      const contents = document.querySelectorAll('.content')
+
+      contents[!idx * 1].classList.remove('content--active')
+      contents[idx].classList.add('content--active')
+    }
+  </script>
+  <div class="container stack">
+    <div class="content content--1 content--active">Content 1</div>
+    <div class="content content--2">Content 2</div>
+  </div>
+  <button onclick="select(0)">1</button>
+  <button onclick="select(1)">2</button>
+</body>
+
+</html>

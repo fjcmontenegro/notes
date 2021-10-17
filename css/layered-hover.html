@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <title>Layered Hover</title>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10rem;
+    }
+
+    .fa {
+      color: white;
+    }
+
+    .icon--facebook>* {
+      background-color: #1877F2
+    }
+
+    .icon--linkedin>* {
+      background-color: #0A66C2;
+    }
+
+    .icon--instagram>* {
+      background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    }
+
+    .icon--twitter>* {
+      background-color: #1D9BF0;
+    }
+
+    .container {
+      display: flex;
+    }
+
+    /* STACK ICONS */
+    .icon {
+      margin: .7rem;
+      cursor: pointer;
+      display: grid;
+    }
+
+    .icon span {
+      grid-area: 1 / -1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 2rem;
+      width: 2rem;
+      /* THE ORDER OF THE TRANSFORMS IS IMPORTANT*/
+      transform: rotateX(50deg) rotateZ(-45deg);
+      transition: transform .5s;
+    }
+
+    .icon span:nth-child(1) {
+      opacity: 0.25
+    }
+
+    .icon span:nth-child(2) {
+      opacity: 0.5
+    }
+
+    .icon span:nth-child(3) {
+      opacity: 0.75
+    }
+
+    .icon span:nth-child(4) {
+      opacity: 1
+    }
+
+    .icon:hover span:nth-child(1) {
+      transform: translateY(-5px) rotateX(50deg) rotateZ(-45deg);
+    }
+
+    .icon:hover span:nth-child(2) {
+      transform: translateY(-10px) rotateX(50deg) rotateZ(-45deg);
+    }
+
+    .icon:hover span:nth-child(3) {
+      transform: translateY(-15px) rotateX(50deg) rotateZ(-45deg);
+    }
+
+    .icon:hover span:nth-child(4) {
+      transform: translateY(-20px) rotateX(50deg) rotateZ(-45deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="icon icon--facebook">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span class="fa fa-facebook" aria-hidden="true"></span>
+    </div>
+    <div class="icon icon--linkedin">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span class="fa fa-linkedin" aria-hidden="true"></span>
+    </div>
+    <div class="icon icon--instagram">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span class="fa fa-instagram" aria-hidden="true"></span>
+    </div>
+    <div class="icon icon--twitter">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span class="fa fa-twitter" aria-hidden="true"></span>
+    </div>
+  </div>
+</body>
+
+</html>
